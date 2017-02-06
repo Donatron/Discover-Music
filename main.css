@@ -1,0 +1,593 @@
+/******************************
+BASE STYLES
+******************************/
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #fff;
+  color: #F68E25;
+  width: 100%;
+  margin: 0;
+  
+  font-family: Verdana,Geneva,sans-serif;
+}
+
+nav {
+  height: 170px;
+  background-color: black;
+}
+
+nav div.menu-icon {
+  display: inline;
+  float: left;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #F68E25;
+  text-decoration: none;
+  padding: 10px;
+}
+
+a:hover {
+  color: lightgrey;
+  opacity: .8;
+}
+
+a:active {
+  color: lightgrey;
+}
+
+button {
+  background-color: #F68E25;
+  color: #666;
+  height: 50px;
+  width: 200px;
+  font-size: 1.3em;
+  border-radius: 7px;
+  border: solid 1px #666;
+  position: absolute bottom;
+  
+}
+
+button:hover {
+  border: solid 2px #666;
+  transition: border .2s linear;
+}
+
+button:active {
+  opacity: .8;
+}
+
+.button-left {
+  margin-left: 15%;
+  margin-bottom: 10px;
+
+}
+
+.button-right {
+  margin-left: 20%;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 400px;
+  padding-top: 0px;
+}
+
+.phone {
+  width: 200px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.banner {
+  background-image: url('img/FrontPageImage.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 60vh;
+  margin-top: 170px;
+  
+  box-shadow: inset -8px -8px 20px lightgrey;
+  
+  border-radius: 0 0 5px 5px;
+}
+
+.main-header {
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  height: 120px;
+  z-index: 1000;
+  
+  opacity: .9;
+}
+
+.row {
+  max-width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top: solid 1px lightgrey; 
+  position: relative;
+}
+
+.row-top {
+  margin-top: 10px;
+}
+
+.col {
+  margin: auto;
+  width: 45%;
+  text-align: center;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+.primary-col {
+  float: left;
+  width: 47.5%;
+  margin-top: 20px;
+}
+
+.secondary-col {
+  float: right;
+  width: 47.5%;
+  margin-top: 20px;  
+}
+
+.main-img {
+  max-width: 80%;
+  border-radius: 5px;
+  box-shadow: 8px 8px 10px lightgrey;
+  overflow: hidden;
+  -webkit-mask-image: -webkit-gradient(linear, left 90%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+
+}
+
+.body-header,
+.body-text {
+  color: #666;
+  padding: 0 10px;
+}
+
+.body-header {
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+
+.body-text {
+  font-size: .8em;
+}
+
+.grey-section {
+  background-color: #f8f8f8;
+}
+
+#disclaimer {
+  color: aquamarine;
+  text-align: center;
+  padding: 10px;
+}
+
+/******************************
+CONTACT PAGE
+******************************/
+
+.subpage-background {
+  background: linear-gradient(black, #666);
+  min-height: 100vh;
+  width:100%;
+  color: white;
+}
+
+#contact-form {
+  width: 60%;
+  margin-top: 170px;
+  background-color: dodgerblue;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  border: solid 2px #fff;
+  color: black;
+}
+
+#contact-heading {
+  width: 60%;
+  margin: 50px auto;
+  text-align: center;
+  
+}
+
+input {
+  border-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+#submit-button {
+  margin: 20px 0 20px 50px;
+  color: black;
+}
+
+.enquiry-message {
+  width: 60%;
+  margin: 400px auto 0 auto;
+  font-size: 1.2em;
+  font-weight: 200;
+}
+
+label,
+input, 
+textarea {
+  margin-left: 50px;
+  margin-top: 5px;
+  font-size: 1em;
+}
+
+input {
+  height: 20px;
+}
+
+#first-name,
+#last-name,
+#phone-number,
+#instrument {
+  width: 20%;
+}
+
+#email {
+  width: 40%;
+}
+
+#enquiry {
+  width: 40%;
+  height: 80px;
+}
+
+
+/******************************
+ABOUT PAGE
+******************************/
+
+.content {
+  margin-top: 170px;
+}
+
+.about,
+.lessons {
+  width: 40%;
+  float: left;
+  text-align: center;
+  color: white;
+}
+
+.about-img {
+  width: 40%;
+  float: right;
+  background-image: url('img/Drums Boy.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 60vh;
+  -webkit-mask-image: -webkit-gradient(linear, left 90%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+
+}
+
+/******************************
+TEACHERS
+******************************/
+
+.teachers-list {
+  width: 20%;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  border: 1px, solid, black;
+}
+
+th {
+  background-color: white;
+  color: #666;
+}
+
+td {
+    color: white;;
+}
+
+/******************************
+LOCATION
+******************************/
+
+iframe {
+	width: 90%;
+	margin-left: 5%;
+}
+
+.map {
+	padding-top: 190px;
+	margin: auto;
+	height: 100%;
+	width: 60%;
+	margin-left: 20%;
+}
+
+.location-description {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	font-size: .75rem;
+}
+
+/******************************
+FOOTER
+******************************/
+
+.main-footer {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: #666;
+  opacity: .9;
+  border-top: solid 1px lightgrey; 
+  
+  font-weight: 200;
+  font-size: .65em;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  fill: #F68E25;
+  margin-right: -10px
+}
+
+.social {
+  width: 13%;
+  float: right;
+  margin-right: 20px;
+  padding: 0;
+}
+
+footer li {
+  display: inline-block;
+  font-size: 1.5em;
+}
+
+footer a:hover {
+  text-decoration: none;
+  padding: 10px 10px;
+  border-radius: 0;
+  color: black;
+}
+
+/******************************
+FLEXBOX
+******************************/
+
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;  
+  align-items: center;
+}
+
+.item {
+  justify-content: flex-start;
+  padding: 0 0px;
+  align-items: flex-start;
+  
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.last-item {
+  margin-right: 20px;
+}
+
+.row {
+  flex: 1;
+}
+
+/******************************
+MEDIA QUERIES
+******************************/
+
+
+@media (max-width: 1024px) {
+  
+  a {
+    font-size: .8em;
+  }
+  
+  .row {
+    max-width: 100%;
+    margin: 5px 0;
+  }
+
+  .main-nav {
+    flex-wrap: wrap;
+  
+  }
+  
+  .body-header {
+      font-size: 1.2em;
+      margin-left: 5px;
+    }
+
+  .body-text {
+      font-size: .7em;
+      margin: 0 8px;
+    }
+
+  button {
+    height: 30px;
+    width: 150px;
+    font-size: 1em;
+    }  
+  
+  .banner {
+      height: 40vh;
+    }
+  
+  .about {
+    font-size: .75em;
+  }
+  
+  .about-header {
+    margin-top: 170px;
+  }
+  
+  .about-img {
+    width: 30%;
+    height: 40%;
+    margin-right: 30px;
+  }
+  
+  #contact-form {
+    width: 80%;
+  }
+  
+  #contact-heading {
+    width: 100%;
+    font-size: 1.5em;
+  }
+  
+  .teachers-list {
+    margin-top: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .main-header  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .banner {
+    background-image: none;
+    background-color: red;
+    height: 0;
+    margin: 0;
+  }
+  
+  .logo {
+    width: 400px;
+    margin: auto;
+}
+  
+  
+  li {
+    visibility: hidden;
+  }
+  
+  button {
+    height: 20px;
+    width: 100px;
+    font-size: .7em;
+  }  
+  
+  .row {
+    max-width: 100%;
+    margin: 0;
+    padding: 0
+  }
+
+  .row-top {
+    margin-top: 120px;
+    }
+  
+  .social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: -20px;
+    padding: 5px;
+  }
+  
+  .social {
+    width: 20%;
+  }
+  
+  footer li {
+    visibility: visible;
+  }
+  
+  .phone {
+    width: 150px;
+    margin: auto;
+  }
+  
+  #first-name,
+  #last-name,
+  #phone-number,
+  #instrument,
+  #email,
+  #enquiry
+    {
+    width: 60%;
+  }
+  
+  #submit-button {
+    margin-left: 35%
+  }
+
+  label,
+  input,
+  textarea {
+    font-size: 0.8em;
+  }
+  
+  #disclaimer {
+    font-size: .5em;
+  }
+  
+  .about {
+    font-size: .5em;
+  }
+  
+  .about-header {
+    margin-top: 170px;
+  }
+  
+  .about-img {
+    width: 50%;
+    height: 25%;
+    margin-right: 30px;
+  }
+  
+  .teachers-list {
+    font-size: .75em;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
