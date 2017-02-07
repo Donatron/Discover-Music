@@ -29,7 +29,9 @@ $phone = "5574xxxx";
     <div class="logo item"><img class="logo" src="img/full-logo.png">
     <div class="phone item-1"><a href=<?php echo "tel:$phone"?> ><?php echo "ph: " . $phone ?></a></div>
     </div>
+    
     <span id="disclaimer"><em>THIS WEBSITE FOR DEMO PURPOSES ONLY<br>THIS BUSINESS IS NOW CLOSED</em></span>
+    
     <ul class="main-nav main-nav-ul">
         <li class="item"><a href="index.php">Home</a></li>
         <li class="item"><a href="about.php">About</a></li>
