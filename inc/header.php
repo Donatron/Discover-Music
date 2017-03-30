@@ -12,6 +12,7 @@ $phone = "5574xxxx";
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
 </head>
+<!--
   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="752" height="80" viewBox="0 0 752 80">
     
     <symbol id="icon-hamburger" width="32" height="32" viewBox="0 0 32 32" x="0" y="0" fill="#fff">
@@ -19,6 +20,7 @@ $phone = "5574xxxx";
     </symbol>
     
   </svg>
+-->
 <header class="main-header">
   <span class="nav-btn nav-toggle">
     <svg>
