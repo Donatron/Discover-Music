@@ -1,4 +1,19 @@
 /******************************
+POST CSS Variables
+******************************/
+
+:root {
+  --orange: #f68e25;
+  --white: #fff;
+  --lightgrey: #f8f8f8;
+  --darkgrey: #666;
+  --black: #000;
+  --blue: dodgerblue;
+  --disclaimer: aquamarine;
+  --color-nav: #10141f;
+}
+
+/******************************
 BASE STYLES
 ******************************/
 
@@ -6,8 +21,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #fff;
-  color: #F68E25;
+  background-color: var(--white);
+  color: var(--orange);
   width: 100%;
   margin: 0;
 
@@ -33,34 +48,34 @@ li {
 }
 
 a {
-  color: #F68E25;
+  color: var(--orange);
   text-decoration: none;
   padding: 10px;
 }
 
 a:hover {
-  color: lightgrey;
+  color: var(--lightgrey);
   opacity: .8;
 }
 
 a:active {
-  color: lightgrey;
+  color: var(--lightgrey);
 }
 
 button {
-  background-color: #F68E25;
+  background-color: var(--orange);
   color: #666;
   height: 50px;
   width: 200px;
   font-size: 1.3em;
   border-radius: 7px;
-  border: solid 1px #666;
+  border: solid 1px var(--darkgrey);
   position: absolute bottom;
 
 }
 
 button:hover {
-  border: solid 2px #666;
+  border: solid 2px var(--darkgrey);
   transition: border .2s linear;
 }
 
@@ -91,7 +106,7 @@ button:active {
 }
 
 .banner {
-  background-image: url('img/FrontPageImage.jpg');
+  background-image: url('../img/FrontPageImage.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 100%;
@@ -104,7 +119,7 @@ button:active {
 }
 
 .main-header {
-  background-color: #000;
+  background-color: var(--black);
   position: fixed;
   width: 100%;
   height: 120px;
@@ -118,7 +133,7 @@ button:active {
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
-  border-top: solid 1px lightgrey;
+  border-top: solid 1px var(--lightgrey);
   position: relative;
 }
 
@@ -149,7 +164,7 @@ button:active {
 .main-img {
   max-width: 80%;
   border-radius: 5px;
-  box-shadow: 8px 8px 10px lightgrey;
+  box-shadow: 8px 8px 10px vasr(--lightgrey);
   overflow: hidden;
   -webkit-mask-image: -webkit-gradient(linear, left 90%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
 
@@ -171,11 +186,11 @@ button:active {
 }
 
 .grey-section {
-  background-color: #f8f8f8;
+  background-color: var(--lightgrey);
 }
 
 #disclaimer {
-  color: aquamarine;
+  color: var(--disclaimer);
   text-align: center;
   padding: 10px;
 }
@@ -185,21 +200,21 @@ CONTACT PAGE
 ******************************/
 
 .subpage-background {
-  background: linear-gradient(black, #666);
+  background: linear-gradient(black, var(--darkgrey));
   min-height: 100vh;
   width:100%;
-  color: white;
+  color: var(--white);
 }
 
 #contact-form {
   width: 60%;
   margin-top: 170px;
-  background-color: dodgerblue;
+  background-color: var(--blue);
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
-  border: solid 2px #fff;
-  color: black;
+  border: solid 2px var(--white);
+  color: var(--black);
 }
 
 #contact-heading {
@@ -216,7 +231,7 @@ input {
 
 #submit-button {
   margin: 20px 0 20px 50px;
-  color: black;
+  color: var(--black);
 }
 
 .enquiry-message {
@@ -268,7 +283,7 @@ ABOUT PAGE
   width: 40%;
   float: left;
   text-align: center;
-  color: white;
+  color: var(--white);
 }
 
 .about-img {
@@ -296,12 +311,12 @@ TEACHERS
 }
 
 th {
-  background-color: white;
-  color: #666;
+  background-color: var(--white);
+  color: var(--darkgrey);
 }
 
 td {
-    color: white;;
+    color: var(--white);;
 }
 
 /******************************
@@ -336,9 +351,9 @@ FOOTER
   text-align: center;
   padding-bottom: 20px;
   padding-top: 20px;
-  background-color: #666;
+  background-color: var(--darkgrey);
   opacity: .9;
-  border-top: solid 1px lightgrey;
+  border-top: solid 1px var(--lightgrey);
 
   font-weight: 200;
   font-size: .65em;
@@ -348,7 +363,7 @@ FOOTER
   width: 40px;
   height: 40px;
   border-radius: 3px;
-  fill: #F68E25;
+  fill: var(--orange);
   margin-right: -10px
 }
 
@@ -368,7 +383,7 @@ footer a:hover {
   text-decoration: none;
   padding: 10px 10px;
   border-radius: 0;
-  color: black;
+  color: var(--black);
 }
 
 /******************************
@@ -520,7 +535,7 @@ MEDIA QUERIES
     transform: translateX(-100%);
     transition: transform 0.6s ease;
 
-    background-color: #10141f;
+    background-color: var(--color-nav);
     display: none;
   }
 
