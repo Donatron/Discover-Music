@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Donatron/Discover-Music#readme",
   "devDependencies": {
+    "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
     "gulp-postcss": "^6.4.0",
     "postcss-cssnext": "^2.10.0",

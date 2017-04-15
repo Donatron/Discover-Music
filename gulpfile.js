@@ -3,7 +3,8 @@ var gulp = require('gulp'),
 
 // Plugins
 var cssnext = require('postcss-cssnext'),
-  pxtorem = require('postcss-pxtorem');
+  pxtorem = require('postcss-pxtorem'),
+  cssnano = require('cssnano');
 
 // Tasks
 
@@ -13,7 +14,8 @@ gulp.task("css", function(){
     pxtorem({
       propWhiteList: [],
       mediaQuery: true
-    })
+    }),
+    cssnano
   ];
 
   return gulp.src('./*.css')
