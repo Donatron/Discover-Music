@@ -1,6 +1,6 @@
 <div class="main-footer">
       <footer>
-        
+
       <div class="social">
         <a href="https://www.facebook.com/DiscoverMusicRobina/">
       <svg class="social-icon facebook-logo"version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -38,6 +38,6 @@
             <a href="contact.php">Contact</a>
           </li>
         </ul>
-       <p>&copy Don Macarthur <?php echo date('Y'); ?></p>
+       <p>&copy <?php echo date('Y'); ?> <a href="http://www.dmwebdev.com.au">Don Macarthur Web Development</a></p>
         </footer>
     </div>

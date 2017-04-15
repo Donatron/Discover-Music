@@ -10,11 +10,11 @@ body {
   color: #F68E25;
   width: 100%;
   margin: 0;
-  
+
   font-family: Verdana,Geneva,sans-serif;
 }
 
-nav {
+nav, navbar, navbar-default {
   height: 170px;
   background-color: black;
 }
@@ -56,7 +56,7 @@ button {
   border-radius: 7px;
   border: solid 1px #666;
   position: absolute bottom;
-  
+
 }
 
 button:hover {
@@ -97,9 +97,9 @@ button:active {
   max-width: 100%;
   height: 60vh;
   margin-top: 170px;
-  
+
   box-shadow: inset -8px -8px 20px lightgrey;
-  
+
   border-radius: 0 0 5px 5px;
 }
 
@@ -109,7 +109,7 @@ button:active {
   width: 100%;
   height: 120px;
   z-index: 1000;
-  
+
   opacity: .9;
 }
 
@@ -118,7 +118,7 @@ button:active {
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
-  border-top: solid 1px lightgrey; 
+  border-top: solid 1px lightgrey;
   position: relative;
 }
 
@@ -143,7 +143,7 @@ button:active {
 .secondary-col {
   float: right;
   width: 47.5%;
-  margin-top: 20px;  
+  margin-top: 20px;
 }
 
 .main-img {
@@ -206,7 +206,7 @@ CONTACT PAGE
   width: 60%;
   margin: 50px auto;
   text-align: center;
-  
+
 }
 
 input {
@@ -227,7 +227,7 @@ input {
 }
 
 label,
-input, 
+input,
 textarea {
   margin-left: 50px;
   margin-top: 5px;
@@ -338,8 +338,8 @@ FOOTER
   padding-top: 20px;
   background-color: #666;
   opacity: .9;
-  border-top: solid 1px lightgrey; 
-  
+  border-top: solid 1px lightgrey;
+
   font-weight: 200;
   font-size: .65em;
 }
@@ -379,7 +379,7 @@ FLEXBOX
 .main-nav {
   display: flex;
   justify-content: center;
-  flex-wrap: nowrap;  
+  flex-wrap: nowrap;
   align-items: center;
 }
 
@@ -387,7 +387,7 @@ FLEXBOX
   justify-content: flex-start;
   padding: 0 0px;
   align-items: flex-start;
-  
+
 }
 
 .logo {
@@ -408,11 +408,11 @@ MEDIA QUERIES
 
 
 @media (max-width: 1024px) {
-  
+
   a {
     font-size: .8em;
   }
-  
+
   .row {
     max-width: 100%;
     margin: 5px 0;
@@ -420,9 +420,9 @@ MEDIA QUERIES
 
   .main-nav {
     flex-wrap: wrap;
-  
+
   }
-  
+
   .body-header {
       font-size: 1.2em;
       margin-left: 5px;
@@ -437,49 +437,49 @@ MEDIA QUERIES
     height: 30px;
     width: 150px;
     font-size: 1em;
-    }  
-  
+    }
+
   .banner {
       height: 40vh;
     }
-  
+
   .about {
     font-size: .75em;
   }
-  
+
   .about-header {
     margin-top: 170px;
   }
-  
+
   .about-img {
     width: 30%;
     height: 40%;
     margin-right: 30px;
   }
-  
+
   #contact-form {
     width: 80%;
   }
-  
+
   #contact-heading {
     width: 100%;
     font-size: 1.5em;
   }
-  
+
   .teachers-list {
     margin-top: 180px;
   }
 }
 
 @media (max-width: 768px) {
-  
+
   .main-header  {
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 170px;
   }
-  
+
   .nav-btn svg {
     width: 40px;
     height: 40px;
@@ -488,22 +488,22 @@ MEDIA QUERIES
     margin-top: 10px;
     margin-left: 20px;
   }
-  
+
   .banner {
     display: none;
   }
-  
+
   .logo {
     width: 400px;
     margin: auto;
 }
-  
+
   .main-nav ul {
     margin: 0;
     flex-direction: column;
     justify-content: flex-start;
-    
-    width: 100%;  
+
+    width: 100%;
     height: 100%;
     top: 0;
     left: 0;
@@ -511,27 +511,27 @@ MEDIA QUERIES
     text-align: center;
     transform: translateX(-100%);
     transition: transform 0.6s ease;
-    
+
     background-color: #10141f;
     display: none;
   }
-  
+
    .main-nav-ul.open {
     transform: translateX(0);
     transition: transform 0.6s ease;
   }
-  
+
   .item {
     padding: 20px;
     display: block;
   }
-  
+
   button {
     height: 30px;
     width: 150px;
     font-size: .9em;
-  }  
-  
+  }
+
   .row {
     max-width: 100%;
     margin: 0;
@@ -539,29 +539,29 @@ MEDIA QUERIES
   }
 
   .row-top {
-    margin-top: 120px;
+    margin-top: 170px;
     }
-  
+
   .social-icon {
     width: 20px;
     height: 20px;
     margin-right: -20px;
     padding: 5px;
   }
-  
+
   .social {
     width: 20%;
   }
-  
+
   footer li {
     visibility: visible;
   }
-  
+
   .phone {
     width: 150px;
     margin: auto;
   }
-  
+
   #first-name,
   #last-name,
   #phone-number,
@@ -571,7 +571,7 @@ MEDIA QUERIES
     {
     width: 60%;
   }
-  
+
   #submit-button {
     margin-left: 35%
   }
@@ -581,47 +581,35 @@ MEDIA QUERIES
   textarea {
     font-size: 0.8em;
   }
-  
+
   #disclaimer {
     font-size: .5em;
   }
-  
+
   .about {
     font-size: .5em;
   }
-  
+
   .about-header {
     margin-top: 170px;
   }
-  
+
   .about-img {
     width: 50%;
     height: 25%;
     margin-right: 30px;
   }
-  
+
   .teachers-list {
     font-size: .75em;
   }
-  
+
+  .lessons {
+    font-size: .5em;
+  }
+
+  .lessons-header {
+    margin-top: 170px;
+  }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
