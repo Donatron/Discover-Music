@@ -454,7 +454,15 @@ MEDIA QUERIES
   .about-img {
     width: 30%;
     height: 40%;
-    margin-right: 30px;
+    margin-right: 40px;
+  }
+
+  .lessons {
+    font-size: .75em;
+  }
+
+  .lessons-header {
+    margin-top: 170px;
   }
 
   #contact-form {
