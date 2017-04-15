@@ -1,0 +1,26 @@
+{
+  "name": "discover-music",
+  "version": "1.0.0",
+  "description": "Business site for Gold Coast music school",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Donatron/Discover-Music.git"
+  },
+  "author": "Don Macarthur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Donatron/Discover-Music/issues"
+  },
+  "homepage": "https://github.com/Donatron/Discover-Music#readme",
+  "devDependencies": {
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.4.0",
+    "postcss-cssnext": "^2.10.0",
+    "postcss-pxtorem": "^4.0.0"
+  }
+}
