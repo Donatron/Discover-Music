@@ -39,5 +39,3 @@ $pageTitle = "Music School | Gold Coast";
       </div> <!-- End secondary-col -->
     </div> <!-- End row -->
     <?php include("inc/footer.php"); ?>
-      <script src="js/scripts.js"></script>
-</body>

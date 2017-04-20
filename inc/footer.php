@@ -1,3 +1,5 @@
+<script src="js/scripts.js"></script>
+</body>
 <div class="main-footer">
       <footer>
 

@@ -51,7 +51,7 @@
 		  <tr>
 			<td>Yeaji Kwak</td>
 		  </tr>
-		  <th>Brass/Woodwind></th>
+		  <th>Brass/Woodwind</th>
 		  <tr>
 			<td>Paul Radford</td>
 		  </tr>
