@@ -1,5 +1,6 @@
 <?php
 $phone = "5574xxxx";
+date_default_timezone_set('Australia/Brisbane');
 ?>
 <head>
   <meta charset="utf-8">
